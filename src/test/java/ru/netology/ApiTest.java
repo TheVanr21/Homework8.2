@@ -376,9 +376,7 @@ class ApiTest {
                         .as(Card[].class);
 
         int balanceApiTwoAfter = cards[1].getBalance();
-        System.out.println("balanceApiTwoAfter="+balanceApiTwoAfter);
         int balanceDBTwoAfter = getCardBalanceFromBD(cards[1].getId());
-        System.out.println("balanceDBTwoAfter="+balanceDBTwoAfter);
 
         Assertions.assertTrue(balanceApiTwoAfter >= 0);
         Assertions.assertTrue(balanceDBTwoAfter >= 0);
