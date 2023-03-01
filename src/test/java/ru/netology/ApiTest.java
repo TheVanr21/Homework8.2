@@ -278,7 +278,7 @@ class ApiTest {
     }
 
     @Test
-    @DisplayName("Should not transfer amounts bigger then balance")
+    @DisplayName("Should not transfer amounts bigger than balance")
     public void shouldNotOverlap() {
         User user = getUserFromDB("vasya", "qwerty123");
 
