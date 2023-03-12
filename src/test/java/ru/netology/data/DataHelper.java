@@ -23,7 +23,7 @@ public class DataHelper {
         return new User.AuthData("vasya", "qwerty123");
     }
 
-    public static int getRandomValue(int min, int max){
+    public static int getRandomValue(int min, int max) {
         return faker.number().numberBetween(min, max);
     }
 }

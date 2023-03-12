@@ -8,10 +8,10 @@ import ru.netology.mode.Card;
 import ru.netology.mode.User;
 
 class ApiTest {
-   DataHelper.DataBase db;
+    DataHelper.DataBase db;
     User.AuthData validUser;
 
-    private void setFullCardNumbers(Card[] cards){
+    private void setFullCardNumbers(Card[] cards) {
         for (Card card : cards) {
             String cardFullNumber = DBHelper.getCardFullNumberById(db, card.getId());
             card.setNumber(cardFullNumber);

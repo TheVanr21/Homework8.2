@@ -75,7 +75,7 @@ public class DBHelper {
         String fullNumber = null;
         try (
                 Connection connection = DriverManager.getConnection(db.getUrl(), db.getLogin(), db.getPassword())
-        ){
+        ) {
             fullNumber = runner.query(connection, getFullCardNumberQuery, id, new ScalarHandler<>());
         } catch (Exception e) {
             e.printStackTrace();

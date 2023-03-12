@@ -62,7 +62,8 @@ public class ApiHelper {
                 .as(Card[].class);
     }
 
-    public static void transfer(String token, String fromNumber, String toNumber, int amount){
+    public static void transfer(String token, String fromNumber, String toNumber, int amount) {
+
         given()
                 .baseUri("http://localhost:9999")
                 .header("Content-type", "application/json")
